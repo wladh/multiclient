@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
     counter = {"total": 0}
     work = open("README.md")
-    mc = MultiClient(50, work, worker, processor,
+    mc = MultiClient(5, work, worker, processor,
                      "192.168.0.1-128,192.168.1.20-30",
                      processor_args=(counter,))
     mc.run()
